@@ -6,7 +6,7 @@ import './style.scss';
 
 
 const FormWizard = () => {
-  const [activeStep, setActiveStep] = useState<number>(1)
+  const [activeStep, setActiveStep] = useState<number>(0)
   const steps: React.ReactElement[] = [
     <StepOne changeStep={() => {setActiveStep(1)}}/>,
     <StepTwo />
