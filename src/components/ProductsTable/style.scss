@@ -1,0 +1,33 @@
+table, td, th, tr {
+  border: 1px solid var(--secondary-color);
+} 
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th{
+  text-align: start;
+  padding: 10px;
+  width: 30%;
+  &:last-child{
+    width: 10%;
+  }
+}
+
+td {
+  height: 70px;
+}
+
+thead{
+  position: sticky;
+  top: 0;
+  border: 1px solid var(--secondary-color);
+  background-color: black;
+  color: white;
+  th{
+    position:sticky;
+    top: 0;
+  }
+}

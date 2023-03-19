@@ -1,3 +1,8 @@
+.product-form-container{
+  padding: 20px;
+  height: 625px;
+}
+
 .wizard_container{
   border-radius: 34px;
   box-shadow: var(--box-shadow-main);
@@ -68,5 +73,16 @@
         }
       }
     }  
+  }
+}
+
+.item_add_form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  .product-input-container{
+    padding: 0 10px;
+    width: calc(100% / 3);
   }
 }

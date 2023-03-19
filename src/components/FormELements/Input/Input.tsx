@@ -36,13 +36,15 @@ const Input: FC<InputProps> =  (props) => {
     icon,
     validators,
     errorText,
+    defaultValid = false,
+    defaultValue = '',
     ...rest
   } = props;
 
   const [inputState, dispatch] = useReducer(inputReducer, {
-    value: '',
+    value: defaultValue,
     touched: false,
-    valid: !(validators.length > 0)
+    valid: defaultValid ? true : !(validators.length > 0)
   });
 
   
@@ -68,6 +70,7 @@ const Input: FC<InputProps> =  (props) => {
     });
     onblur && onblur();
   }
+
 
   if (type === 'textarea') {
     return (

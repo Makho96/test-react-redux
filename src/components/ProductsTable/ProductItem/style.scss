@@ -1,0 +1,9 @@
+.product-icons-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .product-icon-container{
+    padding: 0 10px;
+    cursor: pointer;
+  }
+}

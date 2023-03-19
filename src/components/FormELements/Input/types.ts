@@ -11,7 +11,9 @@ export interface InputProps {
   validators :Array<{
     type: string
   }>
-  errorText?: string
+  errorText?: string,
+  defaultValue?: string,
+  defaultValid?: boolean
 }
 
 
