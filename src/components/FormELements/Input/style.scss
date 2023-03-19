@@ -1,0 +1,58 @@
+.input_outer_container{
+  position: relative;
+  width: 100%;
+  font-size: 18px;
+  .input_inner_container{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    box-shadow: var(--box-shadow-main);
+    border: 1px solid var(--border-main-color);
+    border-radius: 2.5em;
+    overflow: hidden;
+    input, textarea {
+      height: 100%;
+      width: calc(100% - 35px);
+      padding: 1em;
+      border: none;
+      background-color: transparent;
+      padding-right: 5px;
+      height: 3.5em;
+
+    }
+
+    textarea {
+      width: 100%;
+      resize: none;
+      height: 5em;
+      border-radius: 10px;
+    }
+    
+    .icon_container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      pointer-events: none;
+    }
+  
+  }
+  .input_label{
+    display: inline-block;
+    width: 100%;
+    color: var(--text-main-color);
+    font-size: 0.8em;
+    padding-bottom: 1em;
+    font-weight: 700;
+    &::first-letter{
+      text-transform: uppercase;
+    }
+  }
+  .error_text{
+    position: absolute;
+    font-size: 10px;
+    color: var(--color-red);
+  }
+}

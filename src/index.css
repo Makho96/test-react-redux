@@ -1,0 +1,25 @@
+:root{
+  --text-main-color: rgba(23, 15, 73, 1);
+  --text-secondary-color: rgba(111, 108, 144, 1);
+  --border-main-color: rgba(239, 240, 246, 1);
+  --box-shadow-main: 0px 2px 6px rgba(19, 18, 66, 0.07);
+  --primary-color: #4A3AFF;
+  --secondary-color: rgba(111, 108, 144, 1);
+  --neutral-300: #EFF0F7; 
+  --color-red: #FF2D46;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:focus{
+  outline: none;
+}
+
+body {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

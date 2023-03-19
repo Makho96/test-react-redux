@@ -1,0 +1,13 @@
+button{
+  font-size: 18px;
+  padding: 1em 2em;
+  color: white;
+  border-radius: 3em;
+  background: var(--primary-color);
+  border: none;
+  cursor: pointer;
+  &:disabled{
+    opacity: 0.5;
+    cursor: no-drop;
+  }
+}
